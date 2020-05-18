@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+		<meta charset="UTF-8">
+		<meta name="description" content="Test page #2">
+		<meta name="author" content="Eduardo X.">
+		<meta name="keywords" content="survey form">
+		<meta name="viewport" content="width=device=width, initial-scale=1.0">       
+		
+		<title>
+			drones
+		</title>
+	</head>
+	<body>
+		<header>
+			<div>
+	  			<hr/>
+	  			<hr/>
+				    <nav class="topnav">
+				    	<div>
+				    		<a href="#home">home</a>
+					    	<a href="#about">about</a>
+					    	<a href="#contact">contact</a>
+					    	<a clas="active" href="index.html">survey</a>
+					    </div>
+				    	<div>
+				    		All about Drones!
+				    	</div>
+				    </nav>
+				 <hr/>
+				 <hr/>
+			</div>
+
+			<div class="header">
+				<h1 id="title">All about Drones Survey Form</h1>
+				<p id="description">Thank you for taking the time to help us to improve our service. <br/>Please, fill in the blank spaces bellow.</p>
+			</div>
+	  	</header>
+	  	
+	  	<div>
+		  	<form id="survey-form">
+		  		<div class="form-group">
+		  			<label id="name-label" for="name">Full Name:</label>
+		  			<input name="name" type="text" class="form-control" id="name" placeholder="Enter your name"/>
+		  		</div>
+		  		<div class="form-group">
+		  			<label id="email-label" for="email">Email:</label>
+		  			<input name="email" type="email" class="form-control" id="name" placeholder="Enter your email"/>
+		  		</div>
+		  		<div class="form-group-age">
+		  			<label id="number-label" for="number">Age (optional):</label>
+		  			<input type="number" name="Age" id="number" class="form-control" placeholder="Enter your age" min="18" max="99">
+		  		</div>
+		  		<div class="form-group">
+		  			<p>Current ocupation:</p>
+		  			<select id="dropdown" type="dropdown" name="occupation" class="form-control" required/>
+		  				<option disabled selected value id="text-dropdown">Select current occupation</option>
+		  				<option value="student">Student</option>
+		  				<option value="job">Full Time Job</option>
+		  				<option value="company">Company Representative</option>
+		  				<option value="preferNO">Prefer not to say</option>
+		  				<option value="other">Other</option>
+		  			</select>	
+		  		</div>
+
+		  		<div class="form-group">
+		  			<p>Would you recommend us?</p>
+		  			<label>
+		  				<input type="radio" name="user-recommend" value="Definitely" class="input-radio" checked/>
+		  				Definitely
+		  			</label>
+		  			<label>
+		  				<input type="radio" name="user-recommend" value="Maybe" class="input-radio"/>
+		  				Maybe
+		  			</label>
+		  			<label>
+		  				<input type="radio" name="user-recommend" value="Not sure" class="input-radio" >
+		  				Not sure
+		  			</label>
+		  		</div>
+
+		  		<div class="form-group">
+		  			<p>How do you value your experience in our service?</p>
+		  			<select id="		dropdown" type="dropdown" name="service-value" class="form-control" required>
+		  				<option disabled selected value id="text-dropdown">Select your best option</option>
+		  				<option value="excellent">Excellent</option>
+		  				<option value="meets-expectations">Meets my expectations</option>
+		  				<option value="could-improve">Could improve</option>
+		  				<option value="dont-meet-expectations">Don't meet my expectations</option>
+		  			</select>
+		  		</div>
+
+		  		<div class="form-group">
+		  			<p>What would you like to see improved?
+		  				<span class="clue">(Select all that apply)</span>
+		  			</p>
+		  			<label>
+		  				<input type="checkbox" name="improve" value="none" class="checkbox"/>
+		  				None (All is good)
+		  			</label>
+		  			<label>
+		  				<input type="checkbox" name="improve" value="customer-service" class="checkbox"/>
+		  				Customer service
+		  			</label>
+		  			<label>
+		  				<input type="checkbox" name="improve" value="technical-service" class="checkbox"/>
+		  				Technical service
+		  			</label>
+		  			<label>
+		  				<input type="checkbox" name="improve" value="equipment-stock" class="checkbox"/>
+		  				Equipment stock
+		  			</label>
+		  			<label>
+		  				<input type="checkbox" name="improve" value="training" class="checkbox"/>
+		  				Training services
+		  			</label>
+		  			<label>
+		  				<input type="checkbox" name="improve" value="web" class="checkbox"/>
+		  				Web services
+		  			</label>
+		  		</div>
+		  		<div class="form-group">
+		  			<p>Any comments or suggestions?</p>
+		  			<textarea id="comments" class="input-text-area" name="comments" placeholder="Enter your comments here..."></textarea>
+		  		</div>
+		  		<div class="form-group">
+		  			<button type="submit" id="submit" class="submit-button">Submit</button>
+		  		</div>
+		  	</form>
+		 </div>
+	</body>
+</html>
